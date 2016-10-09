@@ -13,7 +13,7 @@ public class SceneManager : MonoBehaviour {
 
     bool init = false;
 
-    private float scaleTime = 10;
+    private float scaleTime = 1;
 
     // Use this for initialization
     void Start () {
