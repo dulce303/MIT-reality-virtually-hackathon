@@ -11,6 +11,8 @@ public class SceneManager : MonoBehaviour {
     public LightFader stereoLight;
     public SoundItem stereo;
 
+    public GameObject visualizer;
+
     bool init = false;
 
     private float scaleTime = 1;
@@ -18,6 +20,7 @@ public class SceneManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
+        visualizer.SetActive(false);
 
         stereo.enabled = false;
         StartCoroutine(DropRing(50f / scaleTime));
@@ -58,6 +61,6 @@ public class SceneManager : MonoBehaviour {
         yield return new WaitForSeconds(time);
 
         stereo.FadeIn();
-
+        visualizer.SetActive(true);
     }
 }
