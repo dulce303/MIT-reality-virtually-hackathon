@@ -15,7 +15,7 @@ public class SceneManager : MonoBehaviour {
 
     bool init = false;
 
-    private float scaleTime = 1;
+    private float scaleTime = 1f;
 
     // Use this for initialization
     void Start () {
@@ -62,5 +62,15 @@ public class SceneManager : MonoBehaviour {
 
         stereo.FadeIn();
         visualizer.SetActive(true);
+
+        StartCoroutine(StopStereo(20f));
+    }
+
+    IEnumerator StopStereo(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        stereo.FadeOut();
+        visualizer.SetActive(false);
     }
 }
