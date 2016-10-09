@@ -11,6 +11,8 @@ public class SceneManager : MonoBehaviour {
     public LightFader stereoLight;
     public SoundItem stereo;
 
+    public AudioSource WilkeAudio;
+
     public AudioSource MomAudio;
 
     public GameObject visualizer;
@@ -25,6 +27,9 @@ public class SceneManager : MonoBehaviour {
         visualizer.SetActive(false);
 
         stereo.enabled = false;
+
+        WilkeAudio.time = 38f;
+        WilkeAudio.Play();
         StartCoroutine(DropRing(50f / scaleTime));
         
     }
