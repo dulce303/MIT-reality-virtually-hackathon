@@ -27,6 +27,9 @@ public class SoundItem : VRTK_InteractableObject
 
     public void FadeIn()
     {
+        if (sound == null)
+            return;
+
         sound.volume = fadeSpeed;
         sound.Play();
         StartCoroutine(FadingIn());
@@ -43,6 +46,9 @@ public class SoundItem : VRTK_InteractableObject
 
     public void FadeOut()
     {
+        if (sound == null)
+            return;
+
         StartCoroutine(FadingOut());
     }
 
