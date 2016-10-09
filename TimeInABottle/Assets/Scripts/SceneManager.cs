@@ -11,6 +11,8 @@ public class SceneManager : MonoBehaviour {
     public LightFader stereoLight;
     public SoundItem stereo;
 
+    public AudioSource MomAudio;
+
     public GameObject visualizer;
 
     bool init = false;
@@ -45,15 +47,33 @@ public class SceneManager : MonoBehaviour {
         }
 
         grabObject = controller2.GetGrabbedObject();
-        if (grabObject != null) { 
+        if (grabObject != null) {
             controller2.GetComponent<VRTK_ObjectAutoGrab>().enabled = false;
             controller2.ForceRelease();
         }
 
+
+        StartCoroutine(PlayMom(2f));
+
+    }
+
+    IEnumerator PlayMom(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        MomAudio.Play();
+
+        StartCoroutine(StopMom(7f));
+    }
+
+    IEnumerator StopMom(float time)
+    {
+        yield return new WaitForSeconds(time);
+        
         stereoLight.FadeIn();
         stereo.enabled = true;
 
-        StartCoroutine(PlayStereo(10f / scaleTime));
+        //StartCoroutine(PlayStereo(10f / scaleTime));
     }
 
     IEnumerator PlayStereo(float time)
@@ -63,7 +83,7 @@ public class SceneManager : MonoBehaviour {
         stereo.FadeIn();
         visualizer.SetActive(true);
 
-        StartCoroutine(StopStereo(20f));
+        StartCoroutine(StopStereo(20f / scaleTime));
     }
 
     IEnumerator StopStereo(float time)
