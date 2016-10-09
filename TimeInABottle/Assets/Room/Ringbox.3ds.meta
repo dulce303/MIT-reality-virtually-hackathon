@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: 184adfa2e05c2a14d81ee1a369ac76ac
+timeCreated: 1475979721
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: base1
+    100002: BaseBox1
+    100004: Button1
+    100006: Casing1
+    100008: Clasp1
+    100010: Componen01
+    100012: Componen02
+    100014: Component_
+    100016: convexhull
+    100018: cylinder
+    100020: Diamond1
+    100022: LidL1
+    100024: LidL2
+    100026: Mounts1
+    100028: Mounts2
+    100030: pillow1
+    100032: pillow2
+    100034: pillow3
+    100036: Ring1
+    100038: //RootNode
+    100040: Snap1
+    400000: base1
+    400002: BaseBox1
+    400004: Button1
+    400006: Casing1
+    400008: Clasp1
+    400010: Componen01
+    400012: Componen02
+    400014: Component_
+    400016: convexhull
+    400018: cylinder
+    400020: Diamond1
+    400022: LidL1
+    400024: LidL2
+    400026: Mounts1
+    400028: Mounts2
+    400030: pillow1
+    400032: pillow2
+    400034: pillow3
+    400036: Ring1
+    400038: //RootNode
+    400040: Snap1
+    2300000: base1
+    2300002: BaseBox1
+    2300004: Button1
+    2300006: Casing1
+    2300008: Clasp1
+    2300010: Componen01
+    2300012: Componen02
+    2300014: Component_
+    2300016: convexhull
+    2300018: cylinder
+    2300020: Diamond1
+    2300022: LidL1
+    2300024: LidL2
+    2300026: Mounts1
+    2300028: Mounts2
+    2300030: pillow1
+    2300032: pillow2
+    2300034: pillow3
+    2300036: Ring1
+    2300038: //RootNode
+    2300040: Snap1
+    3300000: base1
+    3300002: BaseBox1
+    3300004: Button1
+    3300006: Casing1
+    3300008: Clasp1
+    3300010: Componen01
+    3300012: Componen02
+    3300014: Component_
+    3300016: convexhull
+    3300018: cylinder
+    3300020: Diamond1
+    3300022: LidL1
+    3300024: LidL2
+    3300026: Mounts1
+    3300028: Mounts2
+    3300030: pillow1
+    3300032: pillow2
+    3300034: pillow3
+    3300036: Ring1
+    3300038: //RootNode
+    3300040: Snap1
+    4300000: Model
+    4300002: BaseBox1
+    4300004: base1
+    4300006: pillow1
+    4300008: Component_
+    4300010: pillow2
+    4300012: Componen01
+    4300014: Button1
+    4300016: LidL1
+    4300018: Componen02
+    4300020: pillow3
+    4300022: LidL2
+    4300024: Clasp1
+    4300026: Snap1
+    4300028: cylinder
+    4300030: Mounts1
+    4300032: Mounts2
+    4300034: Ring1
+    4300036: Diamond1
+    4300038: Casing1
+    4300040: convexhull
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
