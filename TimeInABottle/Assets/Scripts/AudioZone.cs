@@ -18,6 +18,7 @@ public class AudioZone : MonoBehaviour {
 
             source = itemSound;
             itemSound.FadeIn();
+            SceneManager.instance.visualizer.SetActive(true);
         }
     }
     /*

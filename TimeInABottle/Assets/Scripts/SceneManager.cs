@@ -20,10 +20,12 @@ public class SceneManager : MonoBehaviour {
     bool init = false;
 
     private float scaleTime = 1f;
+    public static SceneManager instance;
 
     // Use this for initialization
     void Start () {
 
+        instance = this;
         visualizer.SetActive(false);
 
         stereo.enabled = false;
@@ -59,6 +61,7 @@ public class SceneManager : MonoBehaviour {
 
 
         StartCoroutine(PlayMom(2f));
+        
 
     }
 
