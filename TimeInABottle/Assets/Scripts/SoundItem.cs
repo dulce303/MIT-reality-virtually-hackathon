@@ -9,6 +9,8 @@ public class SoundItem : VRTK_InteractableObject
     public double maxVolume = 1;
 
     public bool played = false;
+    public bool ready = true;
+    public float delay = 0f;
 
     private float fadeInterval = 0.05f;
     public float fadeSpeed = 0.02f;
@@ -32,7 +34,7 @@ public class SoundItem : VRTK_InteractableObject
             return;
 
         sound.volume = fadeSpeed;
-        sound.time = startTime;
+        sound.time = startTime + delay;
         sound.Play();
         StartCoroutine(FadingIn());
     }

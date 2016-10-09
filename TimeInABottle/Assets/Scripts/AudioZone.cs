@@ -12,7 +12,7 @@ public class AudioZone : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
     {
         var itemSound = other.GetComponent<SoundItem>();
-        if(itemSound != null && source != itemSound && !itemSound.played)
+        if(itemSound != null && source != itemSound && !itemSound.played && itemSound.ready)
         {
             Debug.Log("AudioZone triggered: " + other.name);
 

@@ -79,7 +79,7 @@ public class SceneManager : MonoBehaviour {
         yield return new WaitForSeconds(time);
         
         stereoLight.FadeIn();
-        stereo.enabled = true;
+        stereo.ready = true;
 
         //StartCoroutine(PlayStereo(10f / scaleTime));
     }
