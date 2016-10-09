@@ -30,7 +30,7 @@ public class SceneManager : MonoBehaviour {
 
         WilkeAudio.time = 38f;
         WilkeAudio.Play();
-        StartCoroutine(DropRing(50f / scaleTime));
+        StartCoroutine(DropRing(12f / scaleTime));
         
     }
 	
