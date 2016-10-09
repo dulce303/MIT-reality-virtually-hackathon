@@ -26,7 +26,7 @@ public class SceneManager : MonoBehaviour {
 
         stereo.enabled = false;
         StartCoroutine(DropRing(50f / scaleTime));
-
+        
     }
 	
 	// Update is called once per frame
@@ -80,7 +80,7 @@ public class SceneManager : MonoBehaviour {
     {
         yield return new WaitForSeconds(time);
 
-        stereo.FadeIn();
+        stereo.FadeIn(4.7f);
         visualizer.SetActive(true);
 
         StartCoroutine(StopStereo(20f / scaleTime));

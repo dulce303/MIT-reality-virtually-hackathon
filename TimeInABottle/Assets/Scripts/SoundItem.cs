@@ -26,12 +26,13 @@ public class SoundItem : VRTK_InteractableObject
         sound = GetComponent<AudioSource>();
     }
 
-    public void FadeIn()
+    public void FadeIn(float startTime = 0f)
     {
         if (sound == null)
             return;
 
         sound.volume = fadeSpeed;
+        sound.time = startTime;
         sound.Play();
         StartCoroutine(FadingIn());
     }
