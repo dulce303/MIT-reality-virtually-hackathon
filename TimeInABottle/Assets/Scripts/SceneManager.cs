@@ -9,13 +9,18 @@ public class SceneManager : MonoBehaviour {
     public VRTK_InteractGrab controller2;
 
     public LightFader stereoLight;
+    public SoundItem stereo;
 
     bool init = false;
+
+    private float scaleTime = 10;
 
     // Use this for initialization
     void Start () {
 
-        StartCoroutine(DropRing(5f));
+
+        stereo.enabled = false;
+        StartCoroutine(DropRing(50f / scaleTime));
 
     }
 	
@@ -43,5 +48,16 @@ public class SceneManager : MonoBehaviour {
         }
 
         stereoLight.FadeIn();
+        stereo.enabled = true;
+
+        StartCoroutine(PlayStereo(10f / scaleTime));
+    }
+
+    IEnumerator PlayStereo(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        stereo.FadeIn();
+
     }
 }

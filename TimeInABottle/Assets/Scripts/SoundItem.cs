@@ -8,6 +8,7 @@ public class SoundItem : VRTK_InteractableObject
     public AudioSource sound;
     public double maxVolume = 1;
 
+    public bool played = false;
 
     private float fadeInterval = 0.05f;
     public float fadeSpeed = 0.02f;
