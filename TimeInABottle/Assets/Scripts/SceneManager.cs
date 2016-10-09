@@ -8,6 +8,8 @@ public class SceneManager : MonoBehaviour {
     public VRTK_InteractGrab controller1;
     public VRTK_InteractGrab controller2;
 
+    public LightFader stereoLight;
+
     bool init = false;
 
     // Use this for initialization
@@ -26,8 +28,20 @@ public class SceneManager : MonoBehaviour {
     {
         yield return new WaitForSeconds(time);
 
-        Debug.Log("dropping");
-        controller1.ForceRelease();
-        controller2.ForceRelease();
+        GameObject grabObject = controller1.GetGrabbedObject();
+        if (grabObject != null)
+        {
+            controller1.GetComponent<VRTK_ObjectAutoGrab>().enabled = false;
+            controller1.ForceRelease();
+
+        }
+
+        grabObject = controller2.GetGrabbedObject();
+        if (grabObject != null) { 
+            controller2.GetComponent<VRTK_ObjectAutoGrab>().enabled = false;
+            controller2.ForceRelease();
+        }
+
+        stereoLight.FadeIn();
     }
 }

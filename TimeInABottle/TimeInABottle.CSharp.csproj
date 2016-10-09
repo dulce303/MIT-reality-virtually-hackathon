@@ -69,7 +69,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DontGoThroughThings.cs" />
     <Compile Include="Assets\HTC.UnityPlugin\Pointer3D\Pointer3DEventData.cs" />
     <Compile Include="Assets\HTC.UnityPlugin\Pointer3D\Pointer3DInputModule.cs" />
     <Compile Include="Assets\HTC.UnityPlugin\Pointer3D\RaycastMethod\Base\BaseRaycastMethod.cs" />
@@ -120,8 +119,8 @@
     <Compile Include="Assets\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\DeviceRole.cs" />
     <Compile Include="Assets\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\HandRole.cs" />
     <Compile Include="Assets\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\ViveRole.cs" />
-    <Compile Include="Assets\SceneManager.cs" />
     <Compile Include="Assets\Scripts\AudioZone.cs" />
+    <Compile Include="Assets\Scripts\DontGoThroughThings.cs" />
     <Compile Include="Assets\Scripts\FocusGlow.cs" />
     <Compile Include="Assets\Scripts\FocusLight.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
@@ -129,6 +128,8 @@
     <Compile Include="Assets\Scripts\HandControl.cs" />
     <Compile Include="Assets\Scripts\HandController.cs" />
     <Compile Include="Assets\Scripts\ItemHighlighter.cs" />
+    <Compile Include="Assets\Scripts\LightFader.cs" />
+    <Compile Include="Assets\Scripts\SceneManager.cs" />
     <Compile Include="Assets\Scripts\SoundItem.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
