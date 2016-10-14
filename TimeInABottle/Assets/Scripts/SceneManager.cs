@@ -28,18 +28,12 @@ public class SceneManager : MonoBehaviour {
         instance = this;
         visualizer.SetActive(false);
 
-        stereo.enabled = false;
+        stereo.ready = false;
 
         WilkeAudio.time = 38f;
         WilkeAudio.Play();
         StartCoroutine(DropRing(12f / scaleTime));
-        
     }
-	
-	// Update is called once per frame
-	void Update () {
-        
-	}
 
     IEnumerator DropRing(float time)
     {
@@ -60,9 +54,7 @@ public class SceneManager : MonoBehaviour {
         }
 
 
-        StartCoroutine(PlayMom(2f));
-        
-
+        StartCoroutine(PlayMom(1f));
     }
 
     IEnumerator PlayMom(float time)
@@ -80,25 +72,5 @@ public class SceneManager : MonoBehaviour {
         
         stereoLight.FadeIn();
         stereo.ready = true;
-
-        //StartCoroutine(PlayStereo(10f / scaleTime));
-    }
-
-    IEnumerator PlayStereo(float time)
-    {
-        yield return new WaitForSeconds(time);
-
-        stereo.FadeIn(4.7f);
-        visualizer.SetActive(true);
-
-        StartCoroutine(StopStereo(20f / scaleTime));
-    }
-
-    IEnumerator StopStereo(float time)
-    {
-        yield return new WaitForSeconds(time);
-
-        stereo.FadeOut();
-        visualizer.SetActive(false);
     }
 }
