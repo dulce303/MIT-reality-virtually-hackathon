@@ -131,6 +131,7 @@
     <None Include="Assets\HTC.UnityPlugin\StereoRendering\Shader\StereoRenderShader_5_3.shader" />
     <None Include="Assets\HTC.UnityPlugin\StereoRendering\readme.txt" />
     <None Include="Assets\HTC.UnityPlugin\ViveInputUtility\readme.txt" />
+    <None Include="Assets\OutlineShader.shader" />
     <None Include="Assets\Resources\Aubergine\Shaders\Object\BaseFX\Electric.shader" />
     <None Include="Assets\SteamVR\Resources\SteamVR_AlphaOut.shader" />
     <None Include="Assets\SteamVR\Resources\SteamVR_ClearAll.shader" />
@@ -138,7 +139,6 @@
     <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
     <None Include="Assets\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
     <None Include="Assets\SteamVR\readme.txt" />
-    <None Include="Assets\TestShader.shader" />
     <None Include="Assets\VRTK\Scripts\Shaders\AdaptiveQualityDebugVisualization.shader" />
     <None Include="Assets\VRTK\Scripts\Shaders\TransparentFresnelBehind.shader" />
     <None Include="Assets\VRTK\Scripts\Shaders\UIOverlay.shader" />

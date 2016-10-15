@@ -17,8 +17,6 @@ public class SceneManager : MonoBehaviour {
 
     public GameObject visualizer;
 
-    bool init = false;
-
     private float scaleTime = 1f;
     public static SceneManager instance;
 

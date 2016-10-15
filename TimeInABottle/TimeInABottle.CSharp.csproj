@@ -119,9 +119,11 @@
     <Compile Include="Assets\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\DeviceRole.cs" />
     <Compile Include="Assets\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\HandRole.cs" />
     <Compile Include="Assets\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\ViveRole.cs" />
+    <Compile Include="Assets\Scripts\AnimatedEmission.cs" />
     <Compile Include="Assets\Scripts\DontGoThroughThings.cs" />
     <Compile Include="Assets\Scripts\ItemHighlighter.cs" />
     <Compile Include="Assets\Scripts\LightFader.cs" />
+    <Compile Include="Assets\Scripts\OutlineMesh.cs" />
     <Compile Include="Assets\Scripts\SceneManager.cs" />
     <Compile Include="Assets\Scripts\SoundItem.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
@@ -238,6 +240,7 @@
     <None Include="Assets\HTC.UnityPlugin\StereoRendering\Shader\StereoRenderShader_5_3.shader" />
     <None Include="Assets\HTC.UnityPlugin\StereoRendering\readme.txt" />
     <None Include="Assets\HTC.UnityPlugin\ViveInputUtility\readme.txt" />
+    <None Include="Assets\OutlineShader.shader" />
     <None Include="Assets\Resources\Aubergine\Shaders\Object\BaseFX\Electric.shader" />
     <None Include="Assets\SteamVR\Resources\SteamVR_AlphaOut.shader" />
     <None Include="Assets\SteamVR\Resources\SteamVR_ClearAll.shader" />
@@ -245,7 +248,6 @@
     <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
     <None Include="Assets\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
     <None Include="Assets\SteamVR\readme.txt" />
-    <None Include="Assets\TestShader.shader" />
     <None Include="Assets\VRTK\Scripts\Shaders\AdaptiveQualityDebugVisualization.shader" />
     <None Include="Assets\VRTK\Scripts\Shaders\TransparentFresnelBehind.shader" />
     <None Include="Assets\VRTK\Scripts\Shaders\UIOverlay.shader" />

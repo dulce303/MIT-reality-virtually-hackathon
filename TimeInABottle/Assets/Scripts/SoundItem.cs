@@ -2,6 +2,7 @@
 using UnityEngine.Events;
 using VRTK;
 using VRTK.UnityEventHelper;
+using VRTK.Highlighters;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -30,6 +31,24 @@ public class SoundItem : VRTK_InteractableObject
         
         InteractableObjectGrabbed += new InteractableObjectEventHandler(OnObjectGrabbed);
         InteractableObjectUsed += new InteractableObjectEventHandler(OnObjectUsed);
+    }
+
+    public void ShowOutline()
+    {
+        Debug.Log("ShowOutline");
+        var outline = GetComponentInChildren<OutlineMesh>();
+        if (outline != null)
+        {
+            Debug.Log("OutlineMesh detected");
+            outline.GetComponent<MeshRenderer>().enabled = true;
+        }
+
+        var vrtkOutline = GetComponent<VRTK_OutlineObjectCopyHighlighter>();
+        if (vrtkOutline != null)
+        {
+            vrtkOutline.Initialise(Color.yellow);
+            vrtkOutline.Highlight(Color.yellow);
+        }
     }
 
     void OnObjectGrabbed(object sender, InteractableObjectEventArgs e)
