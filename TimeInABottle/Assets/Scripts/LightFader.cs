@@ -17,6 +17,7 @@ public class LightFader : MonoBehaviour {
         {
             targetLight = GetComponent<Light>();
         }
+        
 	}
 	
     public void FadeIn()

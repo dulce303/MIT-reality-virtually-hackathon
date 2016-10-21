@@ -61,6 +61,12 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\HTC.UnityPlugin\Pointer3D\Pointer3DEventData.cs" />
@@ -113,12 +119,13 @@
     <Compile Include="Assets\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\DeviceRole.cs" />
     <Compile Include="Assets\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\HandRole.cs" />
     <Compile Include="Assets\HTC.UnityPlugin\ViveInputUtility\Scripts\ViveRole\ViveRole.cs" />
-    <Compile Include="Assets\Scripts\AnimatedEmission.cs" />
     <Compile Include="Assets\Scripts\DontGoThroughThings.cs" />
+    <Compile Include="Assets\Scripts\Fader.cs" />
     <Compile Include="Assets\Scripts\ItemHighlighter.cs" />
     <Compile Include="Assets\Scripts\LightFader.cs" />
     <Compile Include="Assets\Scripts\OutlineMesh.cs" />
     <Compile Include="Assets\Scripts\SceneManager.cs" />
+    <Compile Include="Assets\Scripts\ScreenBlackout.cs" />
     <Compile Include="Assets\Scripts\SoundItem.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />

@@ -17,6 +17,8 @@ public class SceneManager : MonoBehaviour {
 
     public GameObject visualizer;
 
+    public ScreenBlackout blackout;
+
     private float scaleTime = 1f;
     public static SceneManager instance;
 
@@ -31,6 +33,8 @@ public class SceneManager : MonoBehaviour {
         WilkeAudio.time = 38f;
         WilkeAudio.Play();
         StartCoroutine(DropRing(12f / scaleTime));
+
+        blackout.FadeOut();
     }
 
     IEnumerator DropRing(float time)
